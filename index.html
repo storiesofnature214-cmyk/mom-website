@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mother, My Angel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+
+<audio id="bgMusic" controls autoplay loop>
+    <source src="music/mom-song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("bgMusic");
+
+music.addEventListener("loadedmetadata", function() {
+    music.currentTime = 48;
+});
+
+music.play().catch(() => {
+    document.addEventListener("click", () => {
+        music.currentTime = 48;
+        music.play();
+    }, { once: true });
+});
+</script>
+
+<!-- rest of your website -->
+
+</body>
+
+<script>
+document.addEventListener('click', function () {
+    document.getElementById('bgMusic').play();
+}, { once: true });
+</script>
+
+    
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="videos/clouds.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+    <section class="hero">
+        <h1>My Mother❤️</h1>
+        <p>
+            For my mother,The best person i have ever known
+        </p>
+    </section>
+
+    <section class="gallery">
+        <h2>Beautiful Memories</h2>
+
+        <div class="photos">
+
+            <div class="card">
+                <img src="images/mom1.jpg" alt="Mom">
+            </div>
+
+            <div class="card">
+                <img src="images/mom2.jpg" alt="Mom">
+            </div>
+
+            <div class="card">
+                <img src="images/mom3.jpg" alt="Mom">
+            </div>
+
+            <div class="card">
+                <img src="images/mom4.jpg" alt="Mom">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="message">
+        <p>
+Dear Mom,
+</p>
+
+<p>
+Sometimes I still just can't believe that you are gone.
+I know you can't come back, but I still keep hoping,
+even if it's only in my dreams.
+
+You were the most beautiful part of my life, Mom,
+and nothing in this world will ever replace that.
+
+I carry your strength and kindness with me every day.
+The hardest part is remembering you and missing you in silence.
+
+You taught me everything except how to live without you.
+
+I would choose you to be my mom in every lifetime,
+again and again.
+
+I love you, Mom.
+Today, tomorrow, and always.
+</p>
+
+<p>
+❤️ Forever Your Child ❤️
+</p>
+
+    <h2>💌 A Letter To My Mom</h2>
+
+    <a href="letter.html" class="letter-btn">
+        Open My Letter ❤️
+    </a>
+
+</section>
+    <footer>
+        Made with lot's Love ❤️
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
